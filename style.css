@@ -4,6 +4,16 @@
   text-align: center;
 }
 
+body {
+  min-width: 1366px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #555248;
+}
+
 *,
 *::before,
 *::after {
@@ -21,10 +31,24 @@ a {
   color: inherit;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+input {
+  padding: 0;
+  margin: 0;
+}
+
 p {
-  font-family: Serif, serif;
-  font-size: 20px;
-  padding: 10px;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
@@ -35,10 +59,142 @@ ul {
 
 .center {
   margin: 0 auto;
-  min-width: 320px;
-  max-width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 1366px;
+  padding-left: 98px;
+  padding-right: 98px;
+}
+
+.button {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.desc-list__item-term {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.main-footer {
+  background-color: #444240;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.news__text-col p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+}
+
+.news__text-col span {
+  font-weight: 700;
+}
+
+.promo__text-col p {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.promo__text-col-title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #1B1A17;
+}
+
+.promo__text-col-title span:first-child {
+  font-size: 45px;
+  line-height: 48px;
+}
+.promo__text-col-title span:last-child {
+  font-size: 30px;
+  line-height: 31px;
+}
+
+.promo__img-col span {
+  font-family: 'Prata', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1B1A17;
+}
+
+.popular__view-all {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.popular__card-title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__card-price {
+  font-family: 'Prata', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.popular__view-details {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1B1A17;
+}
+
+.quality__text-col p {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 150%;
+  color: #444240;
+}
+
+.quality__banner-number {
+  font-family: 'Prata', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
 }
 
 .visually-hidden {
@@ -53,3 +209,7 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+/*font-family: 'Playfair Display', serif;
+font-family: 'Prata', serif;
+font-family: 'Roboto', sans-serif;*/

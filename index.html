@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="style.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Prata&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <title>Магазин часов Conquest</title>
+</head>
+<body>
+  <header class="main-header">
+    <nav class="navigation center">
+      <a>
+        <img src="img/logo.png" width="104" height="26" alt="Логотип магазина часов Conquest" />
+        <ul class="navigation__main-nav-list">
+          <li class="navigation__main-nav-item">
+            <a>Каталог</a>
+          </li>
+          <li class="navigation__main-nav-item">
+            <a>Акции</a>
+          </li>
+          <li class="navigation__main-nav-item">
+            <a>Доставка</a>
+          </li>
+          <li class="navigation__main-nav-item">
+            <a>Контакты</a>
+          </li>
+        </ul>
+        <ul class="navigation__user-nav-list">
+          <li class="navigation__user-nav-item">
+            <a>
+              <img src="img/search.svg" width="16" height="16" alt="Поиск по сайту"/>
+            </a>
+          </li>
+          <li class="navigation__user-nav-item">
+            <a>
+              <img src="img/favorites.svg" width="21" height="18" alt="Посмотреть список отложенных товаров"/>
+            </a>
+          </li>
+          <li class="navigation__user-nav-item">
+            <a>
+              <img src="img/cart.svg" width="18" height="16" alt="Перейти в корзину покупателя"/>
+            </a>
+          </li>
+        </ul>
+      </a>
+    </nav>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Интернет-магазин часов</h1>
+    <section class="promo">
+      <h2 class="visually-hidden">Новая коллекция часов</h2>
+      <div class="promo__inner center">
+        <div class="promo__text-col">
+          <h3 class="promo__text-col-title">
+            <span>Весна/Лето 2019</span>
+            <span>Коллекция</span>
+          </h3>
+          <p>
+            Швейцарские часы в наличии в Москве и с доставкой по всему миру
+          </p>
+          <a href="#" class="button button--dark">Смотреть каталог</a>
+        </div>
+        <div class="promo__img-col">
+          <span>22 000 </span>
+          <img src="img/watch_main.png" width="506" height="806" alt="Часы RADO за 22 тысячи рублей" />
+          <span>28 мм диаметр</span>
+        </div>
+      </div>
+    </section>
+    <section class="popular">
+      <div class="popular__inner center">
+        <h2 class="popular__title section-title">Популярные модели</h2>
+        <a href="#" class="popular__view-all">Смотреть все</a>
+        <ul class="popular__list">
+          <li class="popular__item">
+            <article class="popular__card">
+              <h3 class="popular__card-title">RADO</h3>
+              <p class="popular__card-price">65 300</p>
+              <img src="img/watch_1.png" width="333" height="333" alt="Часы RADO"/>
+              <p class="popular__view-details">Подробнее</p>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="popular__card">
+              <h3 class="popular__card-title">BVLGARI</h3>
+              <p class="popular__card-price">81 700</p>
+              <img src="img/watch_3.png" width="333" height="333" alt="Часы BVLGARI"/>
+              <p class="popular__view-details">Подробнее</p>
+            </article>
+          </li>
+          <li class="popular__item">
+            <article class="popular__card">
+              <h3 class="popular__card-title">BVLGARI</h3>
+              <p class="popular__card-price">72 700</p>
+              <img src="img/watch_4.png" width="333" height="333" alt="Часы BVLGARI"/>
+              <p class="popular__view-details">Подробнее</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="quality">
+      <div class="quality__inner center">
+        <div class="quality__text-col">
+          <h2 class="quality__title section-title">Подлинное качество</h2>
+          <p>
+            Все часы производятся в Швейцарии и имеют сертификаты качества. Настоящие швейцарские часы — это предмет гордости и престижа.
+          </p>
+          <a href="#" class="button button--light">СМОТРЕТЬ КАТАЛОГ</a>
+        </div>
+        <div class="quality__img-col">
+          <img src="img/photo_banner.jpg" width="521" height="414" alt="Швейцарские часы крупным планом"/>
+          <button class="quality__banner-previous"><</button>
+          <span class="quality__banner-number">01</span>
+          <button class="quality__banner-next">></button>
+        </div>
+      </div>
+    </section>
+    <section class="news">
+      <div class="news__inner center">
+        <div class="news__text-col">
+          <h2 class="news__title section-title">Следите за нашими новостями</h2>
+          <p>
+            Подписывайтесь на <span>@conquest_watch</span> в соцсетях и узнавайте о новинках и акциях первыми.
+          </p>
+          <ul class="news__socials-list">
+            <li class="news__socials-item">
+              <a>
+                <img src="img/instagram_icon.svg" width="23" height="24" alt="Перейти на нашу страницу в Instagram"/>
+              </a>
+            </li>
+            <li class="news__socials-item">
+              <a>
+                <img src="img/facebook_icon.svg" width="12" height="22" alt="Перейти на нашу страницу в Facebook"/>
+              </a>
+            </li>
+            <li class="news__socials-item">
+              <a>
+                <img src="img/twitter_icon.svg" width="22" height="18" alt="Перейти на нашу страницу в Twitter"/>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="news__img-col">
+          <div class="news__img-col-left">
+            <img src="img/photo_1.jpg" width="242" height="228" alt="Крупным планом часы на руке плавающего в океане"/>
+            <img src="img/photo_2.jpg" width="242" height="222" alt="Крупным планом часы лежащие на камне"/>
+          </div>
+          <div class="news__img-col-right">
+            <img src="img/photo_3.jpg" width="377" height="460" alt="Крупным планом часы на руке"/>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="main-footer">
+    <div class="main-footer__inner center">
+      <div class="main-footer__left-col">
+        <img src="img/logo-white.png" width="130" height="35" alt="Логотип магазина часов"/>
+        <a href="tel:84994504797">8 (499) 450-47-97</a>
+        <a href="mailto:info@conquest.watch.ru">info@conquest.watch.ru</a>
+      </div>
+      <dl class="main-footer__right-col desc-list">
+        <div class="desc-list__item-wrapper">
+          <dt class="desc-list__item-term">о компании</dt>
+          <dd class="desc-list__item-desc">
+            <ul class="desc-list__item-desc-list">
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Наши магазины</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Вакансии</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Сертификаты</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Отзывы</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="desc-list__item-wrapper">
+          <dt class="desc-list__item-term">покупателям</dt>
+          <dd class="desc-list__item-desc">
+            <ul class="desc-list__item-desc-list">
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Каталог товаров</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Как заказать?</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">FAQ</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Корпоративным клиентам</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+        <div class="desc-list__item-wrapper">
+          <dt class="desc-list__item-term">оплата и доставка</dt>
+          <dd class="desc-list__item-desc">
+            <ul class="desc-list__item-desc-list">
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Время доставки</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Гарантии и ремонт</a>
+              </li>
+              <li class="desc-list__item-desc-list-item">
+                <a href="#">Возврат и компенсация</a>
+              </li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </div>
+  </footer>
+</body>
+</html>
