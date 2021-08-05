@@ -12,40 +12,40 @@
 <body>
   <header class="main-header">
     <nav class="navigation center">
-      <a>
+      <a href="#" class="navigation__logo-link">
         <img src="img/logo.png" width="104" height="26" alt="Логотип магазина часов Conquest" />
-        <ul class="navigation__main-nav-list">
-          <li class="navigation__main-nav-item">
-            <a>Каталог</a>
-          </li>
-          <li class="navigation__main-nav-item">
-            <a>Акции</a>
-          </li>
-          <li class="navigation__main-nav-item">
-            <a>Доставка</a>
-          </li>
-          <li class="navigation__main-nav-item">
-            <a>Контакты</a>
-          </li>
-        </ul>
-        <ul class="navigation__user-nav-list">
-          <li class="navigation__user-nav-item">
-            <a>
-              <img src="img/search.svg" width="16" height="16" alt="Поиск по сайту"/>
-            </a>
-          </li>
-          <li class="navigation__user-nav-item">
-            <a>
-              <img src="img/favorites.svg" width="21" height="18" alt="Посмотреть список отложенных товаров"/>
-            </a>
-          </li>
-          <li class="navigation__user-nav-item">
-            <a>
-              <img src="img/cart.svg" width="18" height="16" alt="Перейти в корзину покупателя"/>
-            </a>
-          </li>
-        </ul>
       </a>
+      <ul class="navigation__main-nav-list">
+        <li class="navigation__main-nav-item">
+          <a href="#">Каталог</a>
+        </li>
+        <li class="navigation__main-nav-item">
+          <a href="#">Акции</a>
+        </li>
+        <li class="navigation__main-nav-item">
+          <a href="#">Доставка</a>
+        </li>
+        <li class="navigation__main-nav-item">
+          <a href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="navigation__user-nav-list">
+        <li class="navigation__user-nav-item">
+          <a href="#">
+            <img src="img/search.svg" width="16" height="16" alt="Поиск по сайту"/>
+          </a>
+        </li>
+        <li class="navigation__user-nav-item">
+          <a href="#">
+            <img src="img/favorites.svg" width="21" height="18" alt="Посмотреть список отложенных товаров"/>
+          </a>
+        </li>
+        <li class="navigation__user-nav-item">
+          <a href="#">
+            <img src="img/cart.svg" width="18" height="16" alt="Перейти в корзину покупателя"/>
+          </a>
+        </li>
+      </ul>
     </nav>
   </header>
   <main>
@@ -64,7 +64,7 @@
           <a href="#" class="button button--dark">Смотреть каталог</a>
         </div>
         <div class="promo__img-col">
-          <span>22 000 </span>
+          <span>22 000</span>
           <img src="img/watch_main.png" width="506" height="806" alt="Часы RADO за 22 тысячи рублей" />
           <span>28 мм диаметр</span>
         </div>
@@ -73,7 +73,9 @@
     <section class="popular">
       <div class="popular__inner center">
         <h2 class="popular__title section-title">Популярные модели</h2>
-        <a href="#" class="popular__view-all">Смотреть все</a>
+        <div class="popular__view-all-container">
+          <a href="#" class="popular__view-all">Смотреть все</a>
+        </div>
         <ul class="popular__list">
           <li class="popular__item">
             <article class="popular__card">
@@ -113,9 +115,11 @@
         </div>
         <div class="quality__img-col">
           <img src="img/photo_banner.jpg" width="521" height="414" alt="Швейцарские часы крупным планом"/>
-          <button class="quality__banner-previous"><</button>
-          <span class="quality__banner-number">01</span>
-          <button class="quality__banner-next">></button>
+          <div class="quality__banner-controls">
+            <button class="quality__banner-previous" type="button"><</button>
+            <span class="quality__banner-number">01</span>
+            <button class="quality__banner-next" type="button">></button>
+          </div>
         </div>
       </div>
     </section>
