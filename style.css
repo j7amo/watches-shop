@@ -49,6 +49,7 @@ p {
 fieldset {
   margin: 0;
   padding: 0;
+  border: none;
 }
 
 dl, dt, dd {
@@ -85,6 +86,102 @@ ul {
 
 .button--light {
   background-color: #D4B098;
+}
+
+.button--filters-reset {
+  padding: 24px 53px;
+  letter-spacing: 0;
+  background-color: #FFFFFF;
+  color: #1D1A1A;
+  border: 2px solid #E7E0CF;
+}
+
+.bands {
+  padding-bottom: 80px;
+}
+
+.bands__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 37px;
+}
+
+.bands__header h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+.bands__header a {
+  padding-bottom: 12px;
+  border-bottom: 1px solid #C4C0B6;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+}
+
+.bands__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -50px;
+  position: relative;
+}
+
+.bands__list::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: -50px;
+  border-bottom: 1px solid #1B1A17;
+  border-left: 1px solid #1B1A17;
+  transform: rotate(45deg);
+}
+
+.bands__list::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  right: -50px;
+  border-bottom: 1px solid #1B1A17;
+  border-left: 1px solid #1B1A17;
+  transform: rotate(-135deg);
+}
+
+.bands__item {
+  margin-right: 40px;
+}
+
+.bands__item:last-child {
+  margin-right: 0;
+}
+
+.bands__card {
+  position: relative;
+  background: #FDFDFB;
+}
+
+.bands__card-inner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bands__card-inner h3 {
+  margin-bottom: 9px;
 }
 
 .desc-list {
@@ -152,6 +249,377 @@ ul {
 
 .desc-list__item-wrapper:last-child {
   margin-right: 0;
+}
+
+.mens-watches {
+  margin-bottom: 58px;
+}
+
+.mens-watches__inner {
+  padding-top: 50px;
+}
+
+.mens-watches__breadcrumbs-list {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #B3B3B3;
+  display: flex;
+  padding-left: 5px;
+  width: 500px;
+  margin-bottom: 40px;
+}
+
+.mens-watches__breadcrumbs-item {
+  position: relative;
+  margin-right: 31px;
+}
+
+.mens-watches__breadcrumbs-item:not(:last-child)::before {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 5px;
+  top: 7px;
+  right: -17px;
+  border-bottom: 1px solid #BDB9B5;
+  border-right: 1px solid #BDB9B5;
+  transform: rotate(-45deg);
+}
+
+.mens-watches__breadcrumbs-item:last-child {
+  color: #555248;
+}
+
+.mens-watches__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 3px;
+  margin-bottom: 40px;
+}
+
+.mens-watches__header h2 {
+  font-family: 'Playfair Display', serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1B1A17;
+}
+
+.mens-watches__header label,
+.mens-watches__header select {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: #BDB9B5;
+}
+
+.mens-watches__header select {
+  border: none;
+  color: #1B1A17;
+}
+
+.mens-watches__main-content {
+  display: flex;
+}
+
+.mens-watches__filters {
+  width: 240px;
+  margin-right: 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  padding-left: 5px;
+}
+
+.mens-watches__filters fieldset {
+  width: 100%;
+}
+
+.mens-watches__price-range-block-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mens-watches__price-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mens-watches__price-and-button-container button {
+  border: none;
+  border-bottom: 1px solid #1B1A17;
+  width: 10px;
+  height: 1px;
+  margin-top: 4px;
+  background: none;
+}
+
+.mens-watches__price-range-block-inner p{
+  margin-right: auto;
+}
+
+.mens-watches__price-range-container {
+  width: 100%;
+  padding-top: 28px;
+  padding-bottom: 33px;
+}
+
+.mens-watches__price-range {
+  position: relative;
+  width: 100%;
+  height: 30px;
+  margin-top: 4px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.mens-watches__price-range::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 0;
+  border-bottom: 1px solid #D4D4D4;
+}
+
+.mens-watches__price-range::after {
+  position: absolute;
+  content: "";
+  width: 119px;
+  height: 0;
+  left: 34px;
+  border-bottom: 1px solid #1B1A17;
+}
+
+.mens-watches__price-range-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  position: absolute;
+  top: -4px;
+  left: 4px;
+}
+
+.mens-watches__price-range-right-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50px;
+  position: absolute;
+  top: -4px;
+  right: 53px;
+}
+
+.mens-watches__price-range-left-select,
+.mens-watches__price-range-right-select {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid #1B1A17;
+  background-color: #FFFFFF;
+}
+
+.mens-watches__price-range-left-select-price,
+.mens-watches__price-range-right-select-price {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(27, 26, 23, 0.82);
+
+}
+
+.mens-watches__brand-and-button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 27px;
+}
+
+.mens-watches__brand-and-button-container button {
+  border: none;
+  border-bottom: 1px solid #1B1A17;
+  width: 10px;
+  height: 1px;
+  margin-top: 4px;
+  background: none;
+}
+
+.mens-watches__mechanism-and-button-container,
+.mens-watches__material-and-button-container,
+.mens-watches__color-and-button-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.mens-watches__mechanism-and-button-container button,
+.mens-watches__material-and-button-container button,
+.mens-watches__color-and-button-container button {
+  position: relative;
+  border: none;
+  background: none;
+  width: 10px;
+  height: 10px;
+  margin-top: 4px;
+}
+
+.mens-watches__mechanism-and-button-container button::before,
+.mens-watches__material-and-button-container button::before,
+.mens-watches__color-and-button-container button::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 0;
+  border-bottom: 1px solid #1B1A17;
+}
+
+.mens-watches__mechanism-and-button-container button::after,
+.mens-watches__material-and-button-container button::after,
+.mens-watches__color-and-button-container button::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 11px;
+  top: 0;
+  left: 11px;
+  border-right: 1px solid #1B1A17;
+}
+
+.mens-watches__color-block {
+  margin-bottom: 35px;
+}
+
+.mens-watches__brands-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mens-watches__brands-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.mens-watches__checkbox + label {
+  position: relative;
+  display: flex;
+  align-items: baseline;
+}
+
+.mens-watches__checkbox:checked + label::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: 1px solid #909090;
+  background-color: #909090;
+  margin-right: 16px;
+}
+
+.mens-watches__checkbox:checked + label::after {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 4px;
+  top: 4px;
+  left: 3px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+  border-left: 1px solid rgba(255, 255, 255, 0.75);
+  background: none;
+  transform: rotate(-45deg);
+}
+
+.mens-watches__checkbox:not(:checked) + label::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  border: 1px solid #909090;
+  margin-right: 16px;
+}
+
+.mens-watches__watches-list-and-pagination-container {
+  width: 835px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.mens-watches__watches-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -41px;
+  margin-bottom: 8px;
+}
+
+.mens-watches__watches-item {
+  margin-right: 40px;
+  margin-bottom: 40px;
+}
+
+.mens-watches__watches-item:last-child {
+  margin-right: 0;
+}
+
+.mens-watches__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 252px;
+  background-color: #FDFDFB;
+}
+
+.mens-watches__card-inner {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.mens-watches__card-inner h3{
+  margin-bottom: 9px;
+}
+
+.mens-watches__pagination-list {
+  position: relative;
+  margin-left: auto;
+  display: flex;
+}
+
+.mens-watches__pagination-list::before {
+  position: absolute;
+  content: "<";
+  left: -16px;
+}
+
+.mens-watches__pagination-list::after {
+  position: absolute;
+  content: ">";
+  right: -16px;
+}
+
+.mens-watches__pagination-item {
+  margin-right: 7px;
+  color: #B6B6B6;
+}
+
+.mens-watches__pagination-item:nth-child(3) {
+  color: #1B1A17;
 }
 
 .navigation {
@@ -537,6 +1005,32 @@ ul {
   font-size: 12px;
   line-height: 16px;
   color: rgba(27, 26, 23, 0.82);
+}
+
+.ruble {
+  position: relative;
+}
+
+.ruble--small::before {
+  position: absolute;
+  content: "";
+  width: 6px;
+  height: 9px;
+  top: 2px;
+  right: -13px;
+  background: url(img/ruble.svg) no-repeat center;
+  background-size: contain;
+}
+
+.ruble--big::before {
+  position: absolute;
+  content: "";
+  width: 7px;
+  height: 10px;
+  top: 3px;
+  right: -13px;
+  background: url(img/ruble.svg) no-repeat center;
+  background-size: contain;
 }
 
 .section-title {
