@@ -96,18 +96,25 @@ ul {
   border: 2px solid #E7E0CF;
 }
 
-.bands {
+.button--to-cart {
+  padding: 24px 56px;
+}
+
+.bands,
+.watched {
   padding-bottom: 80px;
 }
 
-.bands__header {
+.bands__header,
+.watched__header {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
   margin-bottom: 37px;
 }
 
-.bands__header h2 {
+.bands__header h2,
+.watched__header h2 {
   font-family: 'Playfair Display', serif;
   font-style: normal;
   font-weight: normal;
@@ -127,14 +134,16 @@ ul {
   color: #444240;
 }
 
-.bands__list {
+.bands__list,
+.watched__list {
   display: flex;
   flex-wrap: wrap;
   margin-right: -50px;
   position: relative;
 }
 
-.bands__list::before {
+.bands__list::before,
+.watched__list::before {
   position: absolute;
   content: "";
   width: 15px;
@@ -146,7 +155,8 @@ ul {
   transform: rotate(45deg);
 }
 
-.bands__list::after {
+.bands__list::after,
+.watched__list::after {
   position: absolute;
   content: "";
   width: 15px;
@@ -158,20 +168,24 @@ ul {
   transform: rotate(-135deg);
 }
 
-.bands__item {
+.bands__item,
+.watched__item {
   margin-right: 40px;
 }
 
-.bands__item:last-child {
+.bands__item:last-child,
+.watched__item:last-child {
   margin-right: 0;
 }
 
-.bands__card {
+.bands__card,
+.watched__card {
   position: relative;
   background: #FDFDFB;
 }
 
-.bands__card-inner {
+.bands__card-inner,
+.watched__card-inner {
   position: absolute;
   top: 20px;
   left: 20px;
@@ -180,7 +194,8 @@ ul {
   align-items: flex-start;
 }
 
-.bands__card-inner h3 {
+.bands__card-inner h3,
+.watched__card-inner h3 {
   margin-bottom: 9px;
 }
 
@@ -200,6 +215,10 @@ ul {
 
 .desc-list__item-desc-list-item {
   margin-bottom: 15px;
+}
+
+.main-header {
+  padding-top: 30px;
 }
 
 .main-footer {
@@ -259,7 +278,8 @@ ul {
   padding-top: 50px;
 }
 
-.mens-watches__breadcrumbs-list {
+.mens-watches__breadcrumbs-list,
+.watches-card__breadcrumbs-list {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -272,12 +292,14 @@ ul {
   margin-bottom: 40px;
 }
 
-.mens-watches__breadcrumbs-item {
+.mens-watches__breadcrumbs-item,
+.watches-card__breadcrumbs-item {
   position: relative;
   margin-right: 31px;
 }
 
-.mens-watches__breadcrumbs-item:not(:last-child)::before {
+.mens-watches__breadcrumbs-item:not(:last-child)::before,
+.watches-card__breadcrumbs-item:not(:last-child)::before {
   position: absolute;
   content: "";
   width: 5px;
@@ -289,7 +311,8 @@ ul {
   transform: rotate(-45deg);
 }
 
-.mens-watches__breadcrumbs-item:last-child {
+.mens-watches__breadcrumbs-item:last-child,
+.watches-card__breadcrumbs-item:last-child {
   color: #555248;
 }
 
@@ -1033,6 +1056,17 @@ ul {
   background-size: contain;
 }
 
+.ruble--large::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 19px;
+  top: 1px;
+  right: -25px;
+  background: url(img/ruble.svg) no-repeat center;
+  background-size: contain;
+}
+
 .section-title {
   font-family: 'Playfair Display', serif;
   font-style: normal;
@@ -1040,6 +1074,166 @@ ul {
   font-size: 32px;
   line-height: 43px;
   color: #1B1A17;
+}
+
+.watches-card {
+  margin-bottom: 81px;
+}
+
+.watches-card__inner {
+  padding-top: 57px;
+}
+
+.watches-card__breadcrumbs-list {
+  margin-bottom: 22px;
+}
+
+.watches-card__main-content {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+}
+
+.watches-card__text-col {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width: 560px;
+  background-color: #FDFDFB;
+  padding: 49px 59px;
+}
+
+.watches-card__to-favorites {
+  position: absolute;
+  width: 21px;
+  height: 17px;
+  top: 49px;
+  right: 40px;
+  background: url("img/favorites.svg");
+  border: none;
+}
+
+.watches-card__text-col h2 {
+  margin-bottom: 20px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: #444240;
+}
+
+.watches-card__card-price {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: #686868;
+  margin-bottom: 51px;
+}
+
+.watches-card__tabs-container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 26px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  color: #444240;
+}
+
+.watches-card__history-container p {
+  margin-bottom: 19px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: #000000;
+}
+
+.watches-card__history-container p:last-child {
+  margin-bottom: 74px;
+}
+
+.watches-card__desc-tab {
+  margin-right: 40px;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #C4C0B6;
+}
+
+.watches-card__img-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 560px;
+  margin-right: 40px;
+}
+
+.watches-card__main-img-container {
+  position: relative;
+}
+
+.watches-card__main-img-container::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 46%;
+  left: -60px;
+  border-bottom: 1px solid #1B1A17;
+  border-left: 1px solid #1B1A17;
+  transform: rotate(45deg);
+}
+
+.watches-card__main-img-container::after {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  top: 46%;
+  right: -50px;
+  border-bottom: 1px solid #1B1A17;
+  border-left: 1px solid #1B1A17;
+  transform: rotate(-135deg);
+}
+
+.watches-card__previews-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.watches-card__previews-item {
+  margin-right: 17px;
+  width: 127px;
+  display: flex;
+}
+
+.watches-card__previews-item img{
+  vertical-align: middle;
+}
+
+.watches-card__previews-item:last-child {
+  margin-right: 0;
+}
+
+.watches-card__previews-item:not(:first-child) a {
+  position: relative;
+}
+
+.watches-card__previews-item:not(:first-child) a::after {
+  position: absolute;
+  content: "";
+  width: 127px;
+  height: 121px;
+  left: 0;
+  background-color: rgba(100, 100, 100, 0.15);
 }
 
 .visually-hidden {
@@ -1054,7 +1248,3 @@ ul {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-
-/*font-family: 'Playfair Display', serif;
-font-family: 'Prata', serif;
-font-family: 'Roboto', sans-serif;*/
